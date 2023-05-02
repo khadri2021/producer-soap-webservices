@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.khadri.com/soap/webservice/xsd/classes"
+	xmlns:tns="http://www.khadri.com/soap/webservice/xsd/classes"
+	elementFormDefault="qualified">
+
+	<xsd:element name="PaymentRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="type" type="xsd:string"></xsd:element>
+				<xsd:element name="amount" type="xsd:double"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PaymentResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="status" type="xsd:string"></xsd:element>
+				<xsd:element name="ticket" type="xsd:integer"></xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
